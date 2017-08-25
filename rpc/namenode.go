@@ -171,14 +171,11 @@ func (c *NamenodeConnection) resolveConnection() error {
 	}
 
 	var err error
-<<<<<<< d559d5f1391636bd5854fe9050e15a92d711debc
 
 	if c.host != nil {
 		err = c.host.lastError
 	}
 
-=======
->>>>>>> include detail in namenode error
 	for _, host := range c.hostList {
 		if c.host == host {
 			continue
