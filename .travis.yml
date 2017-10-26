@@ -4,11 +4,13 @@ os:
 language: go
 go_import_path: github.com/colinmarc/hdfs
 go: 1.7
+sudo: required
 before_install:
 - git clone https://github.com/sstephenson/bats $HOME/bats
 - mkdir -p $HOME/bats/build
 - "$HOME/bats/install.sh $HOME/bats/build"
 - export PATH="$PATH:$HOME/bats/build/bin"
+- sudo apt-get update && sudo apt-get install libprotobuf-dev protobuf-compiler -y
 env:
 - HADOOP_DISTRO=cdh
 - HADOOP_DISTRO=hdp
