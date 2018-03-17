@@ -41,9 +41,6 @@ func (x RpcKindProto) Enum() *RpcKindProto {
 func (x RpcKindProto) String() string {
 	return proto.EnumName(RpcKindProto_name, int32(x))
 }
-func (x RpcKindProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *RpcKindProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(RpcKindProto_value, data, "RpcKindProto")
 	if err != nil {
@@ -80,9 +77,6 @@ func (x RpcRequestHeaderProto_OperationProto) Enum() *RpcRequestHeaderProto_Oper
 }
 func (x RpcRequestHeaderProto_OperationProto) String() string {
 	return proto.EnumName(RpcRequestHeaderProto_OperationProto_name, int32(x))
-}
-func (x RpcRequestHeaderProto_OperationProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *RpcRequestHeaderProto_OperationProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(RpcRequestHeaderProto_OperationProto_value, data, "RpcRequestHeaderProto_OperationProto")
@@ -122,9 +116,6 @@ func (x RpcResponseHeaderProto_RpcStatusProto) Enum() *RpcResponseHeaderProto_Rp
 }
 func (x RpcResponseHeaderProto_RpcStatusProto) String() string {
 	return proto.EnumName(RpcResponseHeaderProto_RpcStatusProto_name, int32(x))
-}
-func (x RpcResponseHeaderProto_RpcStatusProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *RpcResponseHeaderProto_RpcStatusProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(RpcResponseHeaderProto_RpcStatusProto_value, data, "RpcResponseHeaderProto_RpcStatusProto")
@@ -194,9 +185,6 @@ func (x RpcResponseHeaderProto_RpcErrorCodeProto) Enum() *RpcResponseHeaderProto
 func (x RpcResponseHeaderProto_RpcErrorCodeProto) String() string {
 	return proto.EnumName(RpcResponseHeaderProto_RpcErrorCodeProto_name, int32(x))
 }
-func (x RpcResponseHeaderProto_RpcErrorCodeProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *RpcResponseHeaderProto_RpcErrorCodeProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(RpcResponseHeaderProto_RpcErrorCodeProto_value, data, "RpcResponseHeaderProto_RpcErrorCodeProto")
 	if err != nil {
@@ -244,9 +232,6 @@ func (x RpcSaslProto_SaslState) Enum() *RpcSaslProto_SaslState {
 }
 func (x RpcSaslProto_SaslState) String() string {
 	return proto.EnumName(RpcSaslProto_SaslState_name, int32(x))
-}
-func (x RpcSaslProto_SaslState) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *RpcSaslProto_SaslState) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(RpcSaslProto_SaslState_value, data, "RpcSaslProto_SaslState")

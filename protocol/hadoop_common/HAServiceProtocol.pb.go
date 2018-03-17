@@ -39,9 +39,6 @@ func (x HAServiceStateProto) Enum() *HAServiceStateProto {
 func (x HAServiceStateProto) String() string {
 	return proto.EnumName(HAServiceStateProto_name, int32(x))
 }
-func (x HAServiceStateProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *HAServiceStateProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(HAServiceStateProto_value, data, "HAServiceStateProto")
 	if err != nil {
@@ -78,9 +75,6 @@ func (x HARequestSource) Enum() *HARequestSource {
 }
 func (x HARequestSource) String() string {
 	return proto.EnumName(HARequestSource_name, int32(x))
-}
-func (x HARequestSource) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *HARequestSource) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(HARequestSource_value, data, "HARequestSource")
