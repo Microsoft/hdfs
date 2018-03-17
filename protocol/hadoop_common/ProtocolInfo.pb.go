@@ -4,20 +4,12 @@
 package hadoop_common
 
 import proto "github.com/golang/protobuf/proto"
-<<<<<<< 8c331257e2916ffde948a4cdf651faf7729d16a6
-import json "encoding/json"
-=======
 import fmt "fmt"
->>>>>>> Regenerate proto files
 import math "math"
 
 // Reference proto, json, and math imports to suppress error if they are not otherwise used.
 var _ = proto.Marshal
-<<<<<<< 8c331257e2916ffde948a4cdf651faf7729d16a6
-var _ = &json.SyntaxError{}
-=======
 var _ = fmt.Errorf
->>>>>>> Regenerate proto files
 var _ = math.Inf
 
 // *
