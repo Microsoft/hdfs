@@ -8,7 +8,7 @@ import fmt "fmt"
 import math "math"
 import _ "github.com/colinmarc/hdfs/protocol/hadoop_common"
 
-// Reference proto, json, and math imports to suppress error if they are not otherwise used.
+// Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal
 var _ = fmt.Errorf
 var _ = math.Inf
