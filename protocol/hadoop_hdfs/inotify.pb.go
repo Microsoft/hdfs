@@ -51,9 +51,6 @@ func (x EventType) Enum() *EventType {
 func (x EventType) String() string {
 	return proto.EnumName(EventType_name, int32(x))
 }
-func (x EventType) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *EventType) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(EventType_value, data, "EventType")
 	if err != nil {
@@ -90,9 +87,6 @@ func (x INodeType) Enum() *INodeType {
 }
 func (x INodeType) String() string {
 	return proto.EnumName(INodeType_name, int32(x))
-}
-func (x INodeType) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *INodeType) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(INodeType_value, data, "INodeType")
@@ -139,9 +133,6 @@ func (x MetadataUpdateType) Enum() *MetadataUpdateType {
 }
 func (x MetadataUpdateType) String() string {
 	return proto.EnumName(MetadataUpdateType_name, int32(x))
-}
-func (x MetadataUpdateType) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *MetadataUpdateType) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(MetadataUpdateType_value, data, "MetadataUpdateType")

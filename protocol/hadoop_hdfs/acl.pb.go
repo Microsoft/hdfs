@@ -36,9 +36,6 @@ func (x AclEntryProto_AclEntryScopeProto) Enum() *AclEntryProto_AclEntryScopePro
 func (x AclEntryProto_AclEntryScopeProto) String() string {
 	return proto.EnumName(AclEntryProto_AclEntryScopeProto_name, int32(x))
 }
-func (x AclEntryProto_AclEntryScopeProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *AclEntryProto_AclEntryScopeProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(AclEntryProto_AclEntryScopeProto_value, data, "AclEntryProto_AclEntryScopeProto")
 	if err != nil {
@@ -80,9 +77,6 @@ func (x AclEntryProto_AclEntryTypeProto) Enum() *AclEntryProto_AclEntryTypeProto
 }
 func (x AclEntryProto_AclEntryTypeProto) String() string {
 	return proto.EnumName(AclEntryProto_AclEntryTypeProto_name, int32(x))
-}
-func (x AclEntryProto_AclEntryTypeProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *AclEntryProto_AclEntryTypeProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(AclEntryProto_AclEntryTypeProto_value, data, "AclEntryProto_AclEntryTypeProto")
@@ -137,9 +131,6 @@ func (x AclEntryProto_FsActionProto) Enum() *AclEntryProto_FsActionProto {
 }
 func (x AclEntryProto_FsActionProto) String() string {
 	return proto.EnumName(AclEntryProto_FsActionProto_name, int32(x))
-}
-func (x AclEntryProto_FsActionProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *AclEntryProto_FsActionProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(AclEntryProto_FsActionProto_value, data, "AclEntryProto_FsActionProto")

@@ -45,9 +45,6 @@ func (x StorageTypeProto) Enum() *StorageTypeProto {
 func (x StorageTypeProto) String() string {
 	return proto.EnumName(StorageTypeProto_name, int32(x))
 }
-func (x StorageTypeProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *StorageTypeProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(StorageTypeProto_value, data, "StorageTypeProto")
 	if err != nil {
@@ -84,9 +81,6 @@ func (x CipherSuiteProto) Enum() *CipherSuiteProto {
 func (x CipherSuiteProto) String() string {
 	return proto.EnumName(CipherSuiteProto_name, int32(x))
 }
-func (x CipherSuiteProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *CipherSuiteProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(CipherSuiteProto_value, data, "CipherSuiteProto")
 	if err != nil {
@@ -122,9 +116,6 @@ func (x CryptoProtocolVersionProto) Enum() *CryptoProtocolVersionProto {
 }
 func (x CryptoProtocolVersionProto) String() string {
 	return proto.EnumName(CryptoProtocolVersionProto_name, int32(x))
-}
-func (x CryptoProtocolVersionProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *CryptoProtocolVersionProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(CryptoProtocolVersionProto_value, data, "CryptoProtocolVersionProto")
@@ -167,9 +158,6 @@ func (x ChecksumTypeProto) Enum() *ChecksumTypeProto {
 func (x ChecksumTypeProto) String() string {
 	return proto.EnumName(ChecksumTypeProto_name, int32(x))
 }
-func (x ChecksumTypeProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *ChecksumTypeProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(ChecksumTypeProto_value, data, "ChecksumTypeProto")
 	if err != nil {
@@ -207,9 +195,6 @@ func (x DatanodeInfoProto_AdminState) Enum() *DatanodeInfoProto_AdminState {
 func (x DatanodeInfoProto_AdminState) String() string {
 	return proto.EnumName(DatanodeInfoProto_AdminState_name, int32(x))
 }
-func (x DatanodeInfoProto_AdminState) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *DatanodeInfoProto_AdminState) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(DatanodeInfoProto_AdminState_value, data, "DatanodeInfoProto_AdminState")
 	if err != nil {
@@ -245,9 +230,6 @@ func (x DatanodeStorageProto_StorageState) Enum() *DatanodeStorageProto_StorageS
 }
 func (x DatanodeStorageProto_StorageState) String() string {
 	return proto.EnumName(DatanodeStorageProto_StorageState_name, int32(x))
-}
-func (x DatanodeStorageProto_StorageState) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *DatanodeStorageProto_StorageState) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(DatanodeStorageProto_StorageState_value, data, "DatanodeStorageProto_StorageState")
@@ -287,9 +269,6 @@ func (x HdfsFileStatusProto_FileType) Enum() *HdfsFileStatusProto_FileType {
 }
 func (x HdfsFileStatusProto_FileType) String() string {
 	return proto.EnumName(HdfsFileStatusProto_FileType_name, int32(x))
-}
-func (x HdfsFileStatusProto_FileType) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *HdfsFileStatusProto_FileType) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(HdfsFileStatusProto_FileType_value, data, "HdfsFileStatusProto_FileType")

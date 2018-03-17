@@ -36,9 +36,6 @@ func (x XAttrSetFlagProto) Enum() *XAttrSetFlagProto {
 func (x XAttrSetFlagProto) String() string {
 	return proto.EnumName(XAttrSetFlagProto_name, int32(x))
 }
-func (x XAttrSetFlagProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
-}
 func (x *XAttrSetFlagProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(XAttrSetFlagProto_value, data, "XAttrSetFlagProto")
 	if err != nil {
@@ -81,9 +78,6 @@ func (x XAttrProto_XAttrNamespaceProto) Enum() *XAttrProto_XAttrNamespaceProto {
 }
 func (x XAttrProto_XAttrNamespaceProto) String() string {
 	return proto.EnumName(XAttrProto_XAttrNamespaceProto_name, int32(x))
-}
-func (x XAttrProto_XAttrNamespaceProto) MarshalJSON() ([]byte, error) {
-	return json.Marshal(x.String())
 }
 func (x *XAttrProto_XAttrNamespaceProto) UnmarshalJSON(data []byte) error {
 	value, err := proto.UnmarshalJSONEnum(XAttrProto_XAttrNamespaceProto_value, data, "XAttrProto_XAttrNamespaceProto")
